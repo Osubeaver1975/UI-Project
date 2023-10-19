@@ -1,0 +1,22 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "clientName": "Nike",
+      "clientDescription": "A Small Shoe company out of Eugene Oregon, with a waffleiron and some rubber",
+      "clientImageUrl": "Nike3d.jpeg"
+    },
+    {
+      "id": 2,
+      "clientName": "Google",
+      "clientDescription": "A small internet company trying to change the world with a search engine. Whoever thought such a crazy thing!",
+      "clientImageUrl": "google-3d-logo-icon-01.jpeg"
+    },
+    {
+      "id": 3,
+      "clientName": "IBM",
+      "clientDescription": "A large computer comany",
+      "clientImageUrl": null
+    }
+  ]
+}
