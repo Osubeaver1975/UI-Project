@@ -18,5 +18,23 @@
       "clientDescription": "A large computer comany",
       "clientImageUrl": null
     }
-  ]
+  ],
+
+"meetings": [
+  {
+    "clientName":"Google",
+    "meetingDate":"5-15-2024",
+    "meetingStart":"15:00",
+    "meetingEnd":"15:30"
+  
+  },
+  {
+    "clientName":"Nike",
+    "meetingDate":"10-31-2023",
+    "meetingStart":"15:00",
+    "meetingEnd":"15:30"
+
+  }
+]
+
 }
