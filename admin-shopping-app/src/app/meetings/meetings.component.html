@@ -1,0 +1,19 @@
+<div class="container-fluid">
+
+
+    <table class="table">
+        <tr>
+            <th>ClientName</th>
+            <th>MeetingDate</th>
+            <th>MeetingStart</th>
+            <th>MeetingEnd</th>
+        </tr>
+        <tr *ngFor="let meeting of meetings">
+            <td>{{meeting.clientname}}</td>
+            <td>{{meeting.meetingdate}}</td>
+            <!-- <td>{{meeting.meetingstart}}</td> -->
+            <td>{{meeting.meetingend}}</td>
+            <td></td>
+        </tr>
+    </table>
+</div>

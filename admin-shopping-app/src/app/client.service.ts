@@ -7,17 +7,17 @@ import { Client } from './client';
 })
 export class ClientService {
   baseUrl:string ="http://localhost:3000/clients"
-  constructor(public http:HttpClient) { } //DI for HttpClient
+  constructor(public http:HttpClient) { } //Dependency Injector for Client Service
 
-  loadAllClientsInformation():Observable<Client[]>{
+  loadAllClientInformation(): Observable<Client[]>{
     return this.http.get<Client[]>(this.baseUrl);
   }
 
-  //Store data in json file using post method
-  // 1st param url
-  // 2nd param is object in json format
+  //using Post method we can store data in Json file with Post method!!
+  //1st param url
+  //2nd param is object in json format
   storeClientDetails(client:any):any{
-    return this.http.post(this.baseUrl,client); //my json data has the data for "clients" not sure why it won't work
+    return this.http.post(this.baseUrl,client);
   }
-
+  
 } 
