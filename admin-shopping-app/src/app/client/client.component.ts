@@ -1,6 +1,7 @@
 import { Component,OnInit } from "@angular/core";
 import { ClientService } from "../client.service";
 import { Client } from "../client";
+import { FormGroup,FormControl } from "@angular/forms";
 
 @Component({
   selector: 'app-client',
@@ -9,6 +10,11 @@ import { Client } from "../client";
 })
 export class ClientComponent implements OnInit{
 
+  clientRef = new FormGroup({
+    clientName:new FormControl(),
+    clientDescription:new FormControl(),
+    clienImagetUrl: new FormControl()
+  })
   clients:Array<Client>=[];
   constructor(public clientService:ClientService){} //Dependency Injector for ClientService
 

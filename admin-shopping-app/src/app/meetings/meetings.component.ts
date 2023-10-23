@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { MeetingsService } from '../meetings.service';
 import { Meetings } from '../meetings';
+import { FormGroup,FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-meetings',
@@ -9,6 +10,12 @@ import { Meetings } from '../meetings';
 })
 export class MeetingsComponent implements OnInit{
 
+  meetingRef = new FormGroup({
+    clientname: new FormControl(),
+    meetingdate: new FormControl(),
+    meetingstart: new FormControl(),
+    meetingend: new FormControl(),
+  })
 meetings:Array<Meetings>=[];
   constructor(public meetingService:MeetingsService){} //Dependency Injector for MeetingService
 

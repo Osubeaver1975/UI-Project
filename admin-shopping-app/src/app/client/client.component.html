@@ -1,4 +1,16 @@
 <div class="container-fluid">
+    <form [formGroup]="clientRef">
+        <label>id</label>
+        <input type="number" formControlName="Client ID Number"><br/>
+        <label>ClientName</label>
+        <input type="text" formControlName="Client Name"><br/>
+        <label>ClientDescription</label>
+        <input type="text" formControlName="Client Description"><br/>
+        <label>ClientImageUrl</label>
+        <input type="text" formControlName="Client Image"><br/>
+        <input type="submit" value="Store Client Details" class="btn btn-success"/>
+        <input type="reset" value="Discard Changes" class="btn btn-info"/>
+        </form>
 
 
     <table class="table">

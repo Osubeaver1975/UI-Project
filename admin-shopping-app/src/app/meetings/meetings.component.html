@@ -1,6 +1,18 @@
 <div class="container-fluid">
+    <form [formGroup]="meetingRef">
+        <label>ClientName</label>
+        <input type="text" formControlName="Client Name"><br/>
+        <label>MeetingDate</label>
+        <input type="text" formControlName="Meeting Date"><br/>
+        <label>MeetingStart</label>
+        <input type="text" formControlName="Meeting Start Time"><br/>
+        <label>MeetingEnd</label>
+        <input type="text" formControlName="Meeting End Time"><br/>
+        <input type="submit" value="Store Meeting Details" class="btn btn-success"/>
+        <input type="reset" value="Discard Changes" class="btn btn-info"/>
 
-
+    </form>
+    <br/>
     <table class="table">
         <tr>
             <th>ClientName</th>

@@ -1,7 +1,7 @@
 export class Meetings {
     constructor(public clientname:string,
         public meetingdate:string,
-        public cmeetingstart:string,
+        public meetingstart:string,
         public  meetingend:string){
 
     }
